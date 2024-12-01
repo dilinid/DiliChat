@@ -1,0 +1,13 @@
+<div class="container">
+  <h2>Users List</h2>
+  <ul class="active-users-list">
+    <li *ngFor="let user of activeUsers">
+      <div class="user">
+        <span class="username">{{ user.username }}</span>
+        <span class="status-indicator"></span>
+      </div>
+    </li>
+  </ul>
+  <!-- Button to navigate to the chat page -->
+  <button [routerLink]="['/chat']" class="btn btn-primary">View Chat</button>
+</div>

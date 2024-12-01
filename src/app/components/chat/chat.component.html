@@ -1,0 +1,40 @@
+<div class="container">
+    <!-- Username Section -->
+    <div class="chat-header">
+      <span class="username">{{ chatWithUsername }}</span>
+    </div>
+  
+    <!-- Messages Section -->
+    <div class="messages-container">
+      <div *ngFor="let message of messages" class="message">
+        <div class="message-info">
+          <span class="message-username">{{ message.username }}</span>
+          <span class="message-time">{{ message.time }}</span>
+        </div>
+        <p class="message-text">{{ message.text }}</p>
+      </div>
+    </div>
+  
+    <!-- Message Input Section -->
+    <div class="message-input-container">
+      <button class="file-btn"(click)="fileInput.click()">
+        📎
+    </button>
+      <input 
+      type="file" 
+      #fileInput 
+      (change)="onFileSelected($event)" 
+      hidden 
+      />
+      <input
+        type="text"
+        [(ngModel)]="newMessage"
+        class="message-input"
+        placeholder="Type a message..."
+      />
+      <button class="emoji-btn" (click)="toggleEmojiPicker()">😀</button>
+      <button class="send-btn" (click)="sendMessage()">Send</button>
+    </div>
+    <emoji-mart *ngIf="showEmojiPicker" (emojiClick)="addEmoji($event)"></emoji-mart>
+  </div>
+  

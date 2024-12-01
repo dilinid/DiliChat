@@ -1,0 +1,117 @@
+.container {
+    display: flex;
+    width: 700px;
+    flex-direction: column;
+    height: 80vh; /* Adjust height to fit within the viewport */
+    border: 1px solid var(--input-border-color);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .chat-header {
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: 4px 4px 0 0;
+    color: var(--secondary-text-color);
+  }
+  
+  .username {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .messages-container {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto; /* Scrollable if messages overflow */
+  }
+  
+  .message {
+    margin-bottom: 15px;
+    padding: 5px;
+    border-radius: 4px;
+  }
+  
+  .message-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: var(--primary-text-color);
+  }
+  
+  .message-username {
+    font-weight: bold;
+  }
+  
+  .message-time {
+    font-style: italic;
+  }
+  
+  .message-text {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  
+  .message-input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+    background-color: var(--secondary-color);
+  }
+  
+  .message-input {
+    flex-grow: 1; /* Allows the input to take up the remaining space */
+    padding: 8px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 4px;
+  }
+  
+  .file-btn {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    padding: 8px;    
+    border: 1px solid var(--input-border-color);
+    border-radius: 4px;
+    color: var(--primary-text-color);
+    cursor: pointer;
+  }
+
+  .file-btn:hover {
+    background-color: var(--accent-color);
+    color: white;
+  }
+  
+  input[type="file"] {
+    display: none;
+  }
+  
+  .plus-icon {
+    font-size: 20px;
+  }
+
+  .emoji-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+  .send-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    border: none;
+    color: var(--secondary-text-color);
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .send-btn:hover {
+    background-color: var(--accent-color); 
+}

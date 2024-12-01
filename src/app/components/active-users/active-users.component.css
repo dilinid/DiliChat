@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    align-items: center; 
+    padding: 20px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 8px;
+  }
+  
+  .active-users-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%; 
+  }
+  
+  .user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    justify-content: flex-start; 
+    border-bottom: 1px solid var(--input-border-color);
+    padding-bottom: 10px;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    width: 100%; 
+    justify-content: space-between; 
+  }
+  
+  .username {
+    font-weight: bold;
+    margin-right: 15px;
+  }
+  
+  .status-indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+    margin-left: auto; 
+  }
+  

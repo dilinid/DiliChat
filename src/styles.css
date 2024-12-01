@@ -1,0 +1,115 @@
+  :root {
+    --primary-color: #FA8603 ; /* Vibrant Blue */
+    --secondary-color: #FAE3CF ; /* Light Blue */
+    --accent-color: #faa340; /* Amber */
+    --primary-text-color: #0A0F24; /* Deep Gray */
+    --secondary-text-color: #021357; /* Medium Gray */
+    --input-border-color: #d6d6d6; /* Soft Gray */
+    --input-focus-color: #1a73e8; /* Vibrant Blue */
+    --error-color: #d32f2f; /* Crimson Red */
+}
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--primary-text-color);
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+  input:focus {
+    border-color: var(--input-focus-color);
+    outline: none;
+  }
+  
+  .error {
+    color: var(--error-color);
+    font-size: 12px;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--secondary-text-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: var(--accent-color);
+  }
+
+  .btn:disabled {
+    background-color: #4e4a4a;
+    cursor: not-allowed;
+  }
+  
+  .link {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .link a {
+    color: var(--input-focus-color);
+    text-decoration: none;
+  }
+  
+  .link a:hover {
+    text-decoration: underline;
+  }
+
+  
+  @media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        box-shadow: none;
+        border-radius: 0;
+      }
+    
+      h2 {
+        font-size: 1.5rem;
+      }
+    
+      .btn {
+        padding: 10px;
+        font-size: 14px;
+      }
+    }
