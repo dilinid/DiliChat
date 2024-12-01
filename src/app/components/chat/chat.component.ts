@@ -2,21 +2,20 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { PickerModule } from '@ctrl/ngx-emoji-mart';
-import { HttpClient } from '@angular/common/http'; // Import HttpClientModule here for standalone
+import { HttpClient } from '@angular/common/http'; 
 
 @Component({
   selector: 'app-chat',
-  standalone: true,  // Make the component standalone
-  imports: [CommonModule, FormsModule, PickerModule], // Add required modules here
+  imports: [CommonModule, FormsModule, PickerModule], 
   templateUrl: './chat.component.html',
-  styleUrls: ['./chat.component.css']  // Make sure it's an array
+  styleUrls: ['./chat.component.css']  
 })
 export class ChatComponent {
   chatWithUsername: string = 'Abhii'; // Name of the person you are chatting with
   newMessage: string = ''; // Bind this to the input field
   messages: { username: string; text: string; time: string; file?: File }[] = [
-    { username: 'Abhii', text: 'Hey!', time: '12:30 PM' },
-    { username: 'You', text: 'Hi Babi!', time: '12:31 PM' }
+    { username: 'John', text: 'Hey!', time: '12:30 PM' },
+    { username: 'You', text: 'Hi!', time: '12:31 PM' }
   ];
   showEmojiPicker: boolean = false; // Emoji picker toggle
   selectedFile: File | null = null;

@@ -1,12 +1,12 @@
   :root {
-    --primary-color: #FA8603 ; /* Vibrant Blue */
-    --secondary-color: #FAE3CF ; /* Light Blue */
-    --accent-color: #faa340; /* Amber */
-    --primary-text-color: #0A0F24; /* Deep Gray */
-    --secondary-text-color: #021357; /* Medium Gray */
-    --input-border-color: #d6d6d6; /* Soft Gray */
-    --input-focus-color: #1a73e8; /* Vibrant Blue */
-    --error-color: #d32f2f; /* Crimson Red */
+    --primary-color:#49002a; 
+    --secondary-color: #FAE3CF ; 
+    --accent-color: #faa340;
+    --primary-text-color: #000000;
+    --secondary-text-color: #ffffff; 
+    --input-border-color: #d6d6d6; 
+    --input-focus-color: #8d0052; 
+    --error-color: #d32f2f; 
 }
   * {
     margin: 0;
